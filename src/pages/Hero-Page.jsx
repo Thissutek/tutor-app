@@ -3,8 +3,8 @@ import Card from "../components/Card"
 export default function HeroPage() {
     return(
         <>
-            <section className="min-h-screen flex text-center">
-                <div className=" bg-[#4B562C] container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12">
+            <section className="min-h-screen flex text-center bg-[#4B562C]">
+                <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-12">
                     
                     {/* Left Side - Text Content */}
                     <div className="md:w-1/2 text-center">
