@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-size: 1.2rem;
+  color: #614224;
+  background: #F8F4E7;
+}
+
+.CTA {
+  @apply text-[#FEFAF0] bg-[#A54B4D] hover:bg-[#ff8a8c];
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+
+
+
+.text-style { 
+  font-family: "Libre Baskerville", serif;
+}
+
+.header-style {
+  font-family: "Raleway", serif;
+}
+
+.text-style-inverse { 
+  font-family: "Libre Baskerville", serif;
+  color: #FFFFFF;
+}
+
+.header-style-inverse {
+  font-family: "Raleway", serif;
+  color: #FFFFFF;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
