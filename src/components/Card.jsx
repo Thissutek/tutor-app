@@ -8,7 +8,7 @@ const Card = ({ imageSrc, title, description, buttonText }) => {
         {/* Replace with an actual image later */}
         <img src={imageSrc} alt="Card image" className="w-full h-64 object-cover" />
       </div>
-      <h3 className="mt-4 text-xl font-semibold text-style">{title}</h3>
+      <h3 className="mt-4 text-xl font-semibold header-style" >{title}</h3>
       <p className="mt-2 text-style text-center">{description}</p>
      
     </div>
