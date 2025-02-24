@@ -8,6 +8,7 @@ import About from './pages/About';
 import Testimonials from './pages/Testimonials';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/services' element={<Services />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes>
+      <Footer />
     </>
   )
 }
