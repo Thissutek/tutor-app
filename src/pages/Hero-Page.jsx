@@ -1,15 +1,14 @@
 import Card from "../components/Card"
 import ProfileCard from "../components/ProfileCard"
-import Footer from "../components/Footer"
 
 export default function HeroPage() {
     return(
         <>
             <section className="h-screen flex text-center background-green">
-                <div className="container mx-auto px-8 lg:px-20 flex items-center justify-between">
+                <div className="mx-auto flex items-center justify-between">
                     
                     {/* Left Side - Text Content */}
-                    <div className="max-w-lg text-center">
+                    <div className="max-w-lg text-center ml-40">
                         <h3 className="header-style-inverse text-3xl md:text-5xl font-bold leading-tight">
                             Building Strong Foundations<br></br>
                             for a Brighter Future
@@ -30,7 +29,7 @@ export default function HeroPage() {
                         </div>
 
                     {/* Right Side - Image Placeholder */}
-                    <div className="relative w-1/2 h-screen">
+                    <div className="relative h-screen">
                         <img
                             src="/imgs/Hero-banner.jpg" 
                             alt="Group of people"

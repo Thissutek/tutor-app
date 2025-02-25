@@ -40,5 +40,6 @@
 }
 
 .curve-mask {
-  clip-path: ellipse(100% 70% at 100% 50%);
+  clip-path: circle(90.8% at 100% 0);
+
 }
