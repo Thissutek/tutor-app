@@ -1,4 +1,12 @@
+import ProcessLeft from "../components/processLeft";
+import ProcessRight from "../components/processRight";
+import { useRef } from "react";
+import { motion, useInView } from 'framer-motion';
+
 export default function About() {
+    const ref = useRef(null);
+     const isInView = useInView(ref, { once: true, amount: 0.6 });
+    
     return (
     <>
         <div>
@@ -10,10 +18,10 @@ export default function About() {
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-[rgb(0,0,0)]/50">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white">
+                    <h1 className="text-4xl md:text-6xl font-bold header-style-inverse header-banner">
                         Confidence Starts with the Right Support
                     </h1>
-                    <p className="text-lg text-white mt-4">
+                    <p className="text-lg text-white mt-4 header-banner-text text-style-inverse">
                         One-on-One Tutoring for Every Learner
                     </p>
                 </div>
@@ -29,10 +37,10 @@ export default function About() {
                     />
                 </div>
                 <div className="w-2/3 pl-8 mt-6">
-                    <h2 className="text-3xl font-bold mb-4">
+                    <h2 className="text-3xl font-bold mb-4 section-header header-style">
                         Meet Amy
                     </h2>
-                    <p className="text-lg leading-relaxed">
+                    <p className="text-lg leading-relaxed section-text text-style">
                         Passionate about education and student growth, our founder started this initiative to help students thrive academically and beyond.
                     </p>
                 </div>
@@ -41,7 +49,7 @@ export default function About() {
             {/* Centered Text & Full-Width Image Section */}
             <section className="mx-auto px-8 py-16 lg:px-20 flex items-center space-x-8 bg-[#4B562C] h-screen overflow-hidden">
                 <div className="w-1/2 text-center">
-                    <h2 className="text-3xl font-bold mb-4 header-style-inverse">
+                    <h2 className="text-3xl font-bold mb-4 header-style-inverse section-header">
                         Our Mission
                     </h2>
                     <p className="text-lg leading-relaxed text-style-inverse">
@@ -58,27 +66,88 @@ export default function About() {
             </section>
 
 
-            <section className="bg-[#F3F4F6] py-20">
+            <section className="py-20">
                 {/* Header - Centered */}
                 <div className="text-center mb-12 px-8">
                     <h2 className="text-3xl font-bold">Our Process</h2>
                 </div>
             </section>
-            {/* Left Side Section - Header and Image */}
-            <div className="flex items-center justify-start px-8">
-                <div className="w-1/2 text-center pr-8">
-                <h3 className="text-xl font-semibold header-style">1. Getting Started</h3>
-                <img src="/imgs/Process-1.png" alt="Step 1" className="max-w-[60%] h-auto mx-auto" />
-                </div>
+            {/* Process User Journey */}
+            
+            <div ref={ref}>
+                <motion.div
+                initial={{ opacity: 0, y: 100, scale: 0.8 }}
+                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.8 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="content-container"
+                >
+                    <ProcessLeft 
+                        header="1. Getting Started"
+                        stepImage="/imgs/Process-1.png"
+                        stepAlt="Step 1"
+                        lineImage="/imgs/about-page/line-1.png"
+                        lineAlt="Line 1"
+                        linePositionX="-100%" 
+                        linePositionY="30%"
+                        lineWidth="70%"
+                        />
+                </motion.div>
             </div>
 
              {/* Right Side Section - Header and Image */}
-            <div className="flex items-center justify-end px-8">
-                <div className="w-1/2 text-center pl-8">
-                <h3 className="text-xl font-semibold">2. Your Ideal Tutor Match</h3>
-                <img src="/imgs/Process-2.png" alt="Step 1" className="max-w-[60%] h-auto mx-auto" />
-                </div>
-            </div>
+            <ProcessRight 
+                header="2. Your Ideal Tutor Match"
+                stepImage="/imgs/Process-2.png"
+                stepAlt="Step 1"
+                lineImage="/imgs/about-page/line-2.png"
+                lineAlt="Line 1"
+                linePositionX="80%" 
+                linePositionY="30%"
+                lineWidth="100%"
+            />
+
+            <ProcessLeft 
+                header="3. Personalized Learning"
+                stepImage="/imgs/Process-3.png"
+                stepAlt="Step 1"
+                lineImage="/imgs/about-page/line-3.png"
+                lineAlt="Line 1"
+                linePositionX="-100%" 
+                linePositionY="60%"
+                lineWidth="70%"
+            />
+
+            <ProcessRight 
+                header="4. Collaboration"
+                stepImage="/imgs/Process-4.png"
+                stepAlt="Step 1"
+                lineImage="/imgs/about-page/line-4.png"
+                lineAlt="Line 1"
+                linePositionX="90%" 
+                linePositionY="70%"
+                lineWidth="100%"
+            />
+            <ProcessLeft 
+                header="5. Feedback & Support"
+                stepImage="/imgs/Process-5.png"
+                stepAlt="Step 1"
+                lineImage="/imgs/about-page/line-5.png"
+                lineAlt="Line 1"
+                linePositionX="-120%" 
+                linePositionY="30%"
+                lineWidth="50%"
+            />
+             <ProcessRight 
+                header="6. Success & Growth"
+                stepImage="/imgs/Process-6.png"
+                stepAlt="Step 1"
+                lineImage="/imgs/about-page/line-2.png"
+                lineAlt="Line 1"
+                linePositionX="90%" 
+                linePositionY="30%"
+                lineWidth="100%"
+            />
+            
         </div>
     </>
     )
