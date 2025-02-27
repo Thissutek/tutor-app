@@ -1,11 +1,12 @@
 import ProcessLeft from "../components/processLeft";
 import ProcessRight from "../components/processRight";
+import ProcessStep from "../components/ProcessStep";
 import { useRef } from "react";
 import { motion, useInView } from 'framer-motion';
 
 export default function About() {
     const ref = useRef(null);
-     const isInView = useInView(ref, { once: true, amount: 0.6 });
+    const isInView = useInView(ref, { once: true, amount: 0.6 });
     
     return (
     <>
@@ -74,79 +75,85 @@ export default function About() {
             </section>
             {/* Process User Journey */}
             
-            <div ref={ref}>
-                <motion.div
-                initial={{ opacity: 0, y: 100, scale: 0.8 }}
-                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.8 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="content-container"
-                >
-                    <ProcessLeft 
-                        header="1. Getting Started"
-                        stepImage="/imgs/Process-1.png"
-                        stepAlt="Step 1"
-                        lineImage="/imgs/about-page/line-1.png"
-                        lineAlt="Line 1"
-                        linePositionX="-100%" 
-                        linePositionY="30%"
-                        lineWidth="70%"
-                        />
-                </motion.div>
-            </div>
 
              {/* Right Side Section - Header and Image */}
-            <ProcessRight 
-                header="2. Your Ideal Tutor Match"
-                stepImage="/imgs/Process-2.png"
-                stepAlt="Step 1"
-                lineImage="/imgs/about-page/line-2.png"
-                lineAlt="Line 1"
-                linePositionX="80%" 
-                linePositionY="30%"
-                lineWidth="100%"
-            />
+             <ProcessStep 
+                    component={ProcessLeft} 
+                    header="1. Getting Started"
+                    stepImage="/imgs/Process-1.png"
+                    stepAlt="Step 1"
+                    lineImage="/imgs/about-page/line-1.png"
+                    lineAlt="Line 1"
+                    linePositionX="-100%" 
+                    linePositionY="30%"
+                    lineWidth="70%"
+                    direction="left"
+                />
 
-            <ProcessLeft 
-                header="3. Personalized Learning"
-                stepImage="/imgs/Process-3.png"
-                stepAlt="Step 1"
-                lineImage="/imgs/about-page/line-3.png"
-                lineAlt="Line 1"
-                linePositionX="-100%" 
-                linePositionY="60%"
-                lineWidth="70%"
-            />
+                <ProcessStep 
+                    component={ProcessRight} 
+                    header="2. Your Ideal Tutor Match"
+                    stepImage="/imgs/Process-2.png"
+                    stepAlt="Step 2"
+                    lineImage="/imgs/about-page/line-2.png"
+                    lineAlt="Line 2"
+                    linePositionX="80%" 
+                    linePositionY="30%"
+                    lineWidth="100%"
+                    direction="right"
+                />
 
-            <ProcessRight 
-                header="4. Collaboration"
-                stepImage="/imgs/Process-4.png"
-                stepAlt="Step 1"
-                lineImage="/imgs/about-page/line-4.png"
-                lineAlt="Line 1"
-                linePositionX="90%" 
-                linePositionY="70%"
-                lineWidth="100%"
-            />
-            <ProcessLeft 
-                header="5. Feedback & Support"
-                stepImage="/imgs/Process-5.png"
-                stepAlt="Step 1"
-                lineImage="/imgs/about-page/line-5.png"
-                lineAlt="Line 1"
-                linePositionX="-120%" 
-                linePositionY="30%"
-                lineWidth="50%"
-            />
-             <ProcessRight 
-                header="6. Success & Growth"
-                stepImage="/imgs/Process-6.png"
-                stepAlt="Step 1"
-                lineImage="/imgs/about-page/line-2.png"
-                lineAlt="Line 1"
-                linePositionX="90%" 
-                linePositionY="30%"
-                lineWidth="100%"
-            />
+                <ProcessStep 
+                    component={ProcessLeft} 
+                    header="3. Personalized Learning"
+                    stepImage="/imgs/Process-3.png"
+                    stepAlt="Step 3"
+                    lineImage="/imgs/about-page/line-3.png"
+                    lineAlt="Line 3"
+                    linePositionX="-100%" 
+                    linePositionY="60%"
+                    lineWidth="60%"
+                    direction="left"
+                />
+
+                <ProcessStep 
+                    component={ProcessRight} 
+                    header="4. Collaboration"
+                    stepImage="/imgs/Process-4.png"
+                    stepAlt="Step 4"
+                    lineImage="/imgs/about-page/line-4.png"
+                    lineAlt="Line 4"
+                    linePositionX="100%" 
+                    linePositionY="70%"
+                    lineWidth="80%"
+                    direction="right"
+                />
+
+                <ProcessStep 
+                    component={ProcessLeft} 
+                    header="5. Feedback & Support"
+                    stepImage="/imgs/Process-5.png"
+                    stepAlt="Step 5"
+                    lineImage="/imgs/about-page/line-5.png"
+                    lineAlt="Line 5"
+                    linePositionX="-120%" 
+                    linePositionY="30%"
+                    lineWidth="40%"
+                    direction="left"
+                />
+
+                <ProcessStep 
+                    component={ProcessRight} 
+                    header="6. Success & Growth"
+                    stepImage="/imgs/Process-6.png"
+                    stepAlt=""
+                    lineImage=""
+                    lineAlt=""
+                    linePositionX="90%" 
+                    linePositionY="30%"
+                    lineWidth="100%"
+                    direction="right"
+                />
             
         </div>
     </>
