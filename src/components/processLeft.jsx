@@ -38,7 +38,7 @@ const ProcessLeft = ({
                       />
                   </div>
               </div>
-          </div>
+          </div> 
       );
   };
 

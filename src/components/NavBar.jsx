@@ -48,9 +48,9 @@ export default function NavBar() {
                       onMouseEnter={handleMouseEnter} 
                       onMouseLeave={handleMouseLeave}
                     >
-                      <Link to="/services/tutoring" className="block px-4 py-2 hover:bg-gray-100">1-on-1 Tutoring</Link>
-                      <Link to="/services/group" className="block px-4 py-2 hover:bg-gray-100">Group Sessions</Link>
-                      <Link to="/services/online" className="block px-4 py-2 hover:bg-gray-100">Online Workshops</Link>
+                      <Link to="/services" className="block px-4 py-2 hover:bg-gray-100">1-on-1 Tutoring</Link>
+                      <Link to="/services" className="block px-4 py-2 hover:bg-gray-100">Group Sessions</Link>
+                      <Link to="/services" className="block px-4 py-2 hover:bg-gray-100">Online Workshops</Link>
                     </div>
                   )}
                 </div>
