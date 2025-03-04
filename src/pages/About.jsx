@@ -88,8 +88,8 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="70%"
                     direction="left"
+                    hoverDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
                 />
-
                 <ProcessStep 
                     component={ProcessRight} 
                     header="2. Your Ideal Tutor Match"
@@ -101,6 +101,7 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="100%"
                     direction="right"
+                    hoverDescription='Loren Ipsum'
                 />
 
                 <ProcessStep 
@@ -114,6 +115,7 @@ export default function About() {
                     linePositionY="60%"
                     lineWidth="60%"
                     direction="left"
+                    hoverDescription='Loren Ipsum'
                 />
 
                 <ProcessStep 
@@ -127,6 +129,7 @@ export default function About() {
                     linePositionY="70%"
                     lineWidth="80%"
                     direction="right"
+                    hoverDescription='Loren Ipsum'
                 />
 
                 <ProcessStep 
@@ -140,6 +143,7 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="40%"
                     direction="left"
+                    hoverDescription='Loren Ipsum'
                 />
 
                 <ProcessStep 
@@ -153,6 +157,7 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="100%"
                     direction="right"
+                    hoverDescription='Loren Ipsum'
                 />
             
         </div>

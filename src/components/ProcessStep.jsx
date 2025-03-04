@@ -13,7 +13,8 @@ export default function ProcessStep({
     linePositionX, 
     linePositionY, 
     lineWidth,
-    direction = 'left'
+    direction = 'left',
+    hoverDescription
 }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.6 });
@@ -36,6 +37,7 @@ export default function ProcessStep({
                         linePositionX={linePositionX}
                         linePositionY={linePositionY}
                         lineWidth={lineWidth}
+                        hoverDescription={hoverDescription}
                     />
                 ) : (
                     <ProcessRight 
@@ -47,6 +49,7 @@ export default function ProcessStep({
                         linePositionX={linePositionX}
                         linePositionY={linePositionY}
                         lineWidth={lineWidth}
+                        hoverDescription={hoverDescription}
                     />
                 )}
             </motion.div>
