@@ -35,12 +35,12 @@ const ProcessRight = ({
                 <img 
                     src={stepImage} 
                     alt={stepAlt} 
-                    className="max-w-[80%] md:max-w-[50%] h-auto mx-auto group-hover:opacity-70 transition-opacity duration-300"
+                    className="max-w-[80%] md:max-w-[50%] h-auto mx-auto group-hover:opacity-10 transition-opacity duration-300"
                 />
                 {/* Overlay Text */}
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
                     {hoverDescription && (
-                    <p className="text-stlye text-sm">{hoverDescription}</p>
+                    <p className="text-style text-md w-1/2 h-full flex justify-center items-center p-4 font-bold lg:w-1/3">{hoverDescription}</p>
                     )}
                 </div>
                 </div>

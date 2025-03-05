@@ -47,7 +47,7 @@ export default function HeroPage() {
                 </div>
 
                 {/* Cards Section */}
-                <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+                <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 px-8">
                     <Card 
                     imageSrc="/imgs/Asset 1.png" 
                     title="Personalized Lesson Plan" 

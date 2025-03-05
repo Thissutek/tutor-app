@@ -88,7 +88,7 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="70%"
                     direction="left"
-                    hoverDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                    hoverDescription="Fill out our form, and our team will reach out within 24 hours. Enjoy a free 15-minute phone consultation where we’ll discuss your child’s needs, explore how we can help, and find the best tutoring options."
                 />
                 <ProcessStep 
                     component={ProcessRight} 
@@ -101,7 +101,7 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="100%"
                     direction="right"
-                    hoverDescription='Loren Ipsum'
+                    hoverDescription="We carefully match each student with a tutor based on their academic goals and learning style. Our tutors are certified, experienced, and passionate about fostering independent thinking. They will assess the student’s needs to create a tailored learning plan."
                 />
 
                 <ProcessStep 
@@ -115,7 +115,7 @@ export default function About() {
                     linePositionY="60%"
                     lineWidth="60%"
                     direction="left"
-                    hoverDescription='Loren Ipsum'
+                    hoverDescription="Every student is unique, and so is our approach. Whether it’s mastering concepts, homework support, or test prep, our tutors adapt their teaching style to bridge learning gaps and enhance academic skills."
                 />
 
                 <ProcessStep 
@@ -129,7 +129,7 @@ export default function About() {
                     linePositionY="70%"
                     lineWidth="80%"
                     direction="right"
-                    hoverDescription='Loren Ipsum'
+                    hoverDescription="Learning is a two-way process. Our tutors work closely with students to create the perfect learning environment. We encourage students to communicate their needs, practice independent learning, and come prepared for sessions to maximize progress."
                 />
 
                 <ProcessStep 
@@ -143,7 +143,7 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="40%"
                     direction="left"
-                    hoverDescription='Loren Ipsum'
+                    hoverDescription="Your feedback matters! After the first session, we’ll check in to ensure a great fit. Need a new tutor? We’ll replace them for free. Unsatisfied? Get a 50% refund on the first session. After 10 sessions, we’ll follow up to track progress and adjust as needed."
                 />
 
                 <ProcessStep 
@@ -157,7 +157,7 @@ export default function About() {
                     linePositionY="30%"
                     lineWidth="100%"
                     direction="right"
-                    hoverDescription='Loren Ipsum'
+                    hoverDescription="Our goal is your child’s academic success and confidence. With the right tutor, a personalized approach, and ongoing support, we empower students to excel in their studies and develop skills that last a lifetime."
                 />
             
         </div>
