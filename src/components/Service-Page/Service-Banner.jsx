@@ -11,11 +11,12 @@ export default function ServiceBanner() {
             {/* Overlay with Text */}
             <div className="absolute inset-0 flex items-end justify-center pb-6 md:pb-12">
                 <div className="bg-[rgba(0,0,0,0.60)] p-4 md:p-6 rounded-lg header-style-inverse max-w-[90%] md:max-w-[70%] lg:max-w-[50%]">
-                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 text-center header-style-inverse">
+                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4 text-center text-white">
                         Personalized Tutoring to Boost <br className="hidden sm:block" /> Confidence and Grades
                     </h1>
                 </div>
             </div>
         </div>
+
     )
 }

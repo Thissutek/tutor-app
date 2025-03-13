@@ -50,49 +50,45 @@
 
 }
 
-/* Global text styles */
-.header-banner {
-  font-size: var(--font-header);
-  font-weight: 700;
-  line-height: 1.2;
+
+
+:root {
+  --font-header: 4rem;
+  --font-header-md: 3rem;
+  --font-section-header: 2.25rem;
+  --font-body: 1.25rem;
+  --font-small: 0.875rem;
 }
 
-.header-banner-text {
-  font-size: var(--font-body);
-  font-weight: 400;
-}
-
-.section-header {
-  font-size: var(--font-section-header);
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.section-text {
-  font-size: var(--font-body);
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-.small-text {
-  font-size: var(--font-small);
-  font-weight: 400;
-}
-
+/* Medium screens */
 @media (max-width: 1024px) {
   :root {
-      --font-header: 3rem;
-      --font-header-md: 2.5rem;
-      --font-section-header: 1.75rem;
+      --font-header: 3.5rem;
+      --font-header-md: 2.75rem;
+      --font-section-header: 2rem;
       --font-body: 1.125rem;
+      --font-small: 0.8125rem;
   }
 }
 
+/* Small screens */
 @media (max-width: 768px) {
+  :root {
+      --font-header: 3rem;
+      --font-header-md: 2.25rem;
+      --font-section-header: 1.75rem;
+      --font-body: 1rem;
+      --font-small: 0.75rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
   :root {
       --font-header: 2.5rem;
       --font-header-md: 2rem;
       --font-section-header: 1.5rem;
-      --font-body: 1rem;
+      --font-body: 0.875rem;
+      --font-small: 0.6875rem;
   }
 }

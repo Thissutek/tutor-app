@@ -1,4 +1,5 @@
 import ProfileCard from "./ProfileCard"
+import { Link } from "react-router"
 
 export default function HeroTestimony() {
     return (
@@ -43,9 +44,10 @@ export default function HeroTestimony() {
 
                     {/* Read More CTA */}
                     <div className="mt-12 text-center">
-                    <button className="px-6 py-3 bg-[#566137] text-white font-semibold rounded-lg shadow-md  transition">
+                    <Link to="/testimonials" className="px-6 py-3 bg-[#566137] text-white font-semibold rounded-lg shadow-md transition transform hover:bg-[#4b562c] hover:scale-105">
                         READ MORE
-                    </button>
+                    </Link>
+
                     </div>
                 </div>
             </section>
