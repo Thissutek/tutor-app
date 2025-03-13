@@ -10,6 +10,8 @@
   --font-section-header: 1.75rem;  /* Section headers */
   --font-body: 1.25rem;         /* Body text */
   --font-small: 1rem;           /* Small text */
+  margin: 0;
+  padding: 0;
 }
 
 .CTA {
