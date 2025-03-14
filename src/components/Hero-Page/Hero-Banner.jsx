@@ -1,12 +1,10 @@
 export default function HeroBanner() {
 
     return(
-        <section className="h-screen flex items-center justify-start bg-cover bg-center relative">
+        <section className="h-screen flex items-center justify-center bg-cover bg-center relative">
             {/* Image Section */}
-            <div 
-                className="absolute inset-0 bg-cover bg-center" 
-                style={{ backgroundImage: 'url(/imgs/Hero-page-banner.png)' }}
-            ></div>
+            <img src="/imgs/Hero-page-banner.png" className="absolute inset-0 w-full h-full object-cover" alt="banner">
+            </img>
             
             <div className="container mx-auto px-8 relative z-10 flex items-center justify-start">
                 <div className="text-center w-full max-w-lg">
