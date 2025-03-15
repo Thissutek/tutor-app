@@ -1,38 +1,39 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import TestimonyCardV2 from "./Testimony-cardv2";
 
-export default function TestimonyCard() {
+export default function Carousel() {
         const testimonials = [
             {
-              id: 1,
-              name: "Sarah Johnson",
-              image: "/imgs/students-1.jpg",
-              text: "Working with this team completely transformed our business. Their attention to detail and customer service is unmatched in the industry."
+                id: 1,
+                review: "Working with this team completely transformed our business. Their attention to detail and customer service is unmatched in the industry.",
+                user: "Sarah Johnson",
             },
             {
-              id: 2,
-              name: "Michael Chen",
-              image: "/imgs/students-2.jpg",
-              text: "I was skeptical at first, but the results speak for themselves. Our conversion rate increased by 40% within the first month!"
+                id: 2,
+                review: "Awesome learning from all the tutors.",
+                user: "Devin Jamieson",
             },
             {
-              id: 3,
-              name: "Priya Patel",
-              image: "/imgs/students-3.jpg",
-              text: "The level of professionalism and expertise this company brings is exceptional. They truly understand our needs and deliver beyond expectations."
+                id: 3,
+                review: "I learned a lot about my ability to learn. Thank you to the team",
+                user: "Jamie Haroldson",
             },
             {
-              id: 4,
-              name: "James Wilson",
-              image: "/imgs/students-4.jpg",
-              text: "From day one, the communication was clear and the timeline was respected. I couldn't be happier with the outcome of our project."
+                id: 4,
+                review: "Helped me study for my exams.",
+                user: "Rachel Greene",
             },
             {
-              id: 5,
-              name: "Emma Rodriguez",
-              image: "/imgs/students-5.jpg",
-              text: "Their innovative approach to problem-solving made all the difference. Our team learned so much working alongside them."
-            }
+                id: 5,
+                review: "Amy is awesome.",
+                user: "Matty Matheson",
+            },
+            {
+                id: 6,
+                review: "I learn a lot.",
+                user: "Bejoc Parfait",
+            },
+
           ];
     
     
@@ -63,39 +64,25 @@ export default function TestimonyCard() {
                 );
             };
     return(
-        <section className="py-20">
+        <section className="py-10">
                 <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-16">Hear From Our Students</h2>
+                <h2 className="text-4xl font-bold text-center">Hear From Our Students</h2>
                 
                  {/* Carousel */}
                 <div className="relative">
                     {/* Testimonial Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory p-4 justify-center items-center h-[70vh]">
                     {visibleTestimonials().map((testimonial) => (
-                        <div 
-                        key={testimonial.id} 
-                        className="background-green rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl flex flex-col"
-                        >
-                        {/* Image covering top half of card - now anchored from top */}
-                        <div className="w-full h-80 overflow-hidden">
-                            <img 
-                            src={testimonial.image} 
-                            alt={testimonial.name} 
-                            className="w-full h-full object-cover object-top"
-                            />
-                        </div>
-                        
-                        {/* Text content in bottom half */}
-                        <div className="p-6">
-                            <p className="text-style-inverse mb-4">{testimonial.text}</p>
-                            <h3 className="font-semibold text-lg header-style-inverse">{testimonial.name}</h3>
-                        </div>
-                        </div>
+                        <TestimonyCardV2
+                        key={testimonial.id}
+                        testimony_review={testimonial.review}
+                        testimony_user={testimonial.user}
+                        />
                     ))}
                     </div>
 
                     {/* Navigation Buttons */}
-                    <div className="flex justify-center mt-10 gap-4">
+                    <div className="flex justify-center gap-4">
                     <button 
                         onClick={goToPrev}
                         className="CTA text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"

@@ -1,6 +1,6 @@
 import TestimonyBanner from '../components/Testimonial-Page/Testimony-banner';
-import TestimonyCard from '../components/Testimonial-Page/Testimony-card';
-import TestimonyCardV2 from '../components/Testimonial-Page/Testimony-cardv2';
+import Carousel from '../components/Testimonial-Page/Testimony-card';
+
 
 export default function Testimonials() {
 
@@ -12,7 +12,7 @@ export default function Testimonials() {
             <TestimonyBanner />
 
             {/* Testimonials Carousel Section */}
-            <TestimonyCard />
+            <Carousel />
             
             </div>
         </>
