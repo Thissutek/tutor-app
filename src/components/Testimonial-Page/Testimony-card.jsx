@@ -5,7 +5,7 @@ export default function Carousel() {
         const testimonials = [
             {
                 id: 1,
-                review: "Working with this team completely transformed our business. Their attention to detail and customer service is unmatched in the industry.",
+                review: "Best Tutors.",
                 user: "Sarah Johnson",
             },
             {
