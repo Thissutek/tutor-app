@@ -1,11 +1,6 @@
-import { useState } from 'react';
-import PricingCard from './Service-Card';
-
+import PricingCard from './Service-Card'
 
 const ServicePricing = () => {
-  // Track expanded state for each card separately
-  const [expandedCards, setExpandedCards] = useState({});
-
   const pricingOptions = [
     {
       title: "Private Tutoring",
@@ -38,11 +33,15 @@ const ServicePricing = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6 text-center header-style">Pricing Options</h1>
-      <h2 className="text-2xl text-left header-style font-semibold mb-4">Grades 7-10</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h1 className="text-3xl font-bold mb-6 text-center">Pricing Options</h1>
+      <h2 className="text-2xl text-left font-semibold mb-4">Grades 7-10</h2>
+      {/* Flexbox container for the cards */}
+      <div className="flex gap-4 justify-center">
         {pricingOptions.map((option, index) => (
-          <PricingCard key={index} option={option} />
+          // This is the "container" for each PricingCard
+          <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3">
+            <PricingCard option={option} />
+          </div>
         ))}
       </div>
     </div>
@@ -50,3 +49,4 @@ const ServicePricing = () => {
 };
 
 export default ServicePricing;
+
