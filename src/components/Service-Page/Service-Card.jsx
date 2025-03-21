@@ -13,7 +13,7 @@ const PricingCard = ({ option }) => {
       className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 cursor-pointer ${isExpanded ? 'shadow-lg z-10' : 'hover:shadow-lg'}`}
       onClick={toggleExpand}
     >
-      <div className="p-4 flex justify-between items-center">
+      <div className="px-4 py-7 flex justify-between items-center">
         <h3 className="text-lg font-medium header-style">{option.title}</h3>
         <span className="text-gray-600 text-xl">{isExpanded ? '−' : '+'}</span>
       </div>
