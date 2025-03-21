@@ -34,7 +34,7 @@ const ServicePricing = () => {
   return (
     <div className="w-full max-w-6xl mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6 text-center">Pricing Options</h1>
-      <h2 className="text-2xl text-left font-semibold mb-4">Grades 7-10</h2>
+      <h2 className="text-3xl text-left font-semibold mb-4">Grades 7-10</h2>
       {/* Flexbox container for the cards */}
       <div className="flex gap-4 justify-center">
         {pricingOptions.map((option, index) => (
