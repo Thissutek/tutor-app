@@ -36,7 +36,7 @@ const ServicePricing = () => {
       <h1 className="text-3xl font-bold mb-6 text-center">Pricing Options</h1>
       <h2 className="text-2xl text-left font-semibold mb-4">Grades 7-10</h2>
       {/* Flexbox container for the cards */}
-      <div className="flex gap-4 justify-center">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
         {pricingOptions.map((option, index) => (
           // This is the "container" for each PricingCard
           <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3">
