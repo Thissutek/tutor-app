@@ -1,0 +1,18 @@
+@media (max-width: 640px) {
+  /* Small screens */
+  .about-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 0; /* Remove desktop padding */
+  }
+
+  .about-mission img {
+    width: 100%; /* Make it fill width */
+    height: auto; /* Keep aspect ratio */
+    max-height: 60vh; /* Prevent extreme stretching */
+    object-fit: cover; /* Ensures the image looks good */
+    border-radius: 10px; /* Keep rounded edges */
+  }
+}

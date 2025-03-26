@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  
   color: #614224;
-  background: #F8F4E7;
-  --font-header: 3.5rem;          /* Big headers (like banners) */
-  --font-header-md: 3rem;       /* Medium headers */
-  --font-section-header: 1.75rem;  /* Section headers */
-  --font-body: 1.25rem;         /* Body text */
-  --font-small: 1rem;           /* Small text */
+  background: #f8f4e7;
+  --font-header: 3.5rem; /* Big headers (like banners) */
+  --font-header-md: 3rem; /* Medium headers */
+  --font-section-header: 1.75rem; /* Section headers */
+  --font-body: 1.25rem; /* Body text */
+  --font-small: 1rem; /* Small text */
   margin: 0;
   padding: 0;
 }
@@ -18,10 +17,9 @@
   @apply text-[#FEFAF0] bg-[#A54B4D] hover:bg-[#ff8a8c];
   font-weight: 700;
   font-size: 1.2rem;
-
 }
 
-.text-style { 
+.text-style {
   font-family: "Libre Baskerville", serif;
   color: #614224;
 }
@@ -31,26 +29,23 @@
   color: #614224;
 }
 
-.text-style-inverse { 
+.text-style-inverse {
   font-family: "Libre Baskerville", serif;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header-style-inverse {
   font-family: "Raleway", serif;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .background-green {
-  background: #4B562C;
+  background: #4b562c;
 }
 
 .curve-mask {
   clip-path: circle(90.8% at 100% 0);
-
 }
-
-
 
 :root {
   --font-header: 4rem;
@@ -63,32 +58,33 @@
 /* Medium screens */
 @media (max-width: 1024px) {
   :root {
-      --font-header: 3.5rem;
-      --font-header-md: 2.75rem;
-      --font-section-header: 2rem;
-      --font-body: 1.125rem;
-      --font-small: 0.8125rem;
+    --font-header: 3.5rem;
+    --font-header-md: 2.75rem;
+    --font-section-header: 2rem;
+    --font-body: 1.125rem;
+    --font-small: 0.8125rem;
   }
 }
 
 /* Small screens */
 @media (max-width: 768px) {
   :root {
-      --font-header: 3rem;
-      --font-header-md: 2.25rem;
-      --font-section-header: 1.75rem;
-      --font-body: 1rem;
-      --font-small: 0.75rem;
+    --font-header: 3rem;
+    --font-header-md: 2.25rem;
+    --font-section-header: 1.75rem;
+    --font-body: 1rem;
+    --font-small: 0.75rem;
   }
 }
 
 /* Extra small screens */
 @media (max-width: 480px) {
   :root {
-      --font-header: 2.5rem;
-      --font-header-md: 2rem;
-      --font-section-header: 1.5rem;
-      --font-body: 0.875rem;
-      --font-small: 0.6875rem;
+    --font-header: 2.5rem;
+    --font-header-md: 2rem;
+    --font-section-header: 1.5rem;
+    --font-body: 0.875rem;
+    --font-small: 0.6875rem;
   }
 }
+
