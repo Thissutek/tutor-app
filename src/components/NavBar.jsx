@@ -38,7 +38,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col space-y-2 p-4 shadow-md text-style">
+        <div className="md:hidden flex flex-col space-y-2 p-4 text-style">
           <Link to="/about">About</Link>
           <Link to="/testimonials">Testimonials</Link>
           <Link to="/services">Services</Link>

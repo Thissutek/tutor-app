@@ -1,22 +1,21 @@
 export default function TestimonyBanner() {
-    return (
-        <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-[80vh]">
-            {/* Banner Image */}
-            <img 
-                src="/imgs/testimonial-banner.jpg" 
-                alt="Services Banner" 
-                className="w-full h-full object-cover"
-            />
+  return (
+    <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-[80vh]">
+      {/* Banner Image */}
+      <img
+        src="/imgs/testimonial-banner.jpg"
+        alt="Services Banner"
+        className="w-full h-full object-cover"
+      />
 
-            {/* Overlay with Text */}
-            <div className="absolute inset-0 flex items-end justify-center pb-6 md:pb-12">
-                <div className="bg-[rgba(0,0,0,0.60)] p-4 md:p-6 rounded-lg header-style-inverse max-w-[90%] md:max-w-[70%] lg:max-w-[50%]">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4 text-center text-white">
-                        Personalized Tutoring to Boost <br className="hidden sm:block" /> Confidence and Grades
-                    </h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid </p>
-                </div>
-            </div>
+      {/* Overlay with Text */}
+      <div className="absolute inset-0 flex items-end justify-center pb-6 md:pb-12">
+        <div className="bg-[rgba(0,0,0,0.60)] p-4 md:p-6 rounded-lg header-style-inverse max-w-[90%] md:max-w-[70%] lg:max-w-[50%]">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4 text-center text-white">
+            Testimonials & Reviews <br className="hidden sm:block" /> Hear What Our Students Have to Say
+          </h1>
         </div>
-    )
+      </div>
+    </div>
+  )
 }
