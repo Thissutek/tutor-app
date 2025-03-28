@@ -11,10 +11,14 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
 
+//utils
+import ScrollToTop from './utils/ScrollToTop';
+
 function App() {
 
   return (
     <>
+      <ScrollToTop />
       <SEO />
       <NavBar />
       <Routes>

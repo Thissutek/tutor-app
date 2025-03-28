@@ -7,7 +7,7 @@ export default function HeroTestimony() {
     <section className="py-16 bg-[#F9D59B]">
       <div className="container mx-auto px-8 lg:px-20">
         {/* Left-aligned header */}
-        <h2 className="text-3xl font-bold mb-8 text-left">What Our Clients Say</h2>
+        <h2 className="text-3xl font-bold mb-8 text-left header-style">What Our Clients Say</h2>
 
         <Reviews />
 
