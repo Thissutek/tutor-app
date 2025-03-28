@@ -1,6 +1,6 @@
 export default function AboutMission() {
   return (
-    <section className="mx-auto px-0 py-16 sm:pl-0 lg:pl-20 lg:w-auto lg:flex-grow flex flex-col lg:flex-row items-center lg:space-y-0 lg:space-x-8 bg-[#4B562C] h-screen overflow-hidden">
+    <section className="mx-auto px-0 py-0 sm:pl-0 lg:pl-20 lg:w-auto lg:flex-grow flex flex-col lg:flex-row items-center lg:space-y-0 lg:space-x-8 bg-[#4B562C] min-h-screen overflow-hidden">
       <div className="w-full lg:w-1/2 text-center lg:text-left">
         <h2 className="text-3xl font-bold mb-4 header-style-inverse text-center">
           Our Mission
@@ -13,7 +13,7 @@ export default function AboutMission() {
         <img
           src="/imgs/mission-banner.jpg"
           alt="Mission"
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          className="w-full h-full object-contain lg:object-cover rounded-lg shadow-lg"
         />
       </div>
     </section>
