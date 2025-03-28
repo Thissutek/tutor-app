@@ -34,9 +34,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const public_key = 'rtWPu7Q6-li9ktctx';
-    const service_id = 'service_k3npb6q';
-    const template_id = 'template_vrqubxj';
+    const public_key = import.meta.env.VITE_PUBLIC_KEY;
+    const service_id = import.meta.env.VITE_SERVICE_ID;
+    const template_id = import.meta.env.VITE_TEMPLATE_ID;
     const templateParams = {
       name: formData.name,
       email: formData.email,
