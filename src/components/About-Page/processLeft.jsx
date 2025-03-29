@@ -40,7 +40,7 @@ const ProcessLeft = ({
             </div>
           </div>
         </div>
-
+        {/*Mobile Overlay */}
         <div className="w-full md:w-2/3 text-center md:pr-8 mb-6 md:mb-0 block md:hidden" >
           <h3 className="text-xl font-semibold header-style section-header mb-2">{header}</h3>
           <div className="relative group " onClick={handleClick}>
@@ -53,7 +53,7 @@ const ProcessLeft = ({
             <div className={`absolute inset-0 flex flex-col justify-center items-center text-center transition-opacity duration-300 p-4 z-20 ${isClicked ? "opacity-100 visible" : "opacity-0 invisible"
               }`}>
               {isClicked && (
-                <p className="text-style text-md w-1/2 h-full flex justify-center items-center p-4 font-bold lg:w-1/3">{hoverDescription}</p>
+                <p className="text-style text-sm md:text-md w-full h-full flex justify-center items-center p-4 font-bold md:w-1/2 lg:w-1/3">{hoverDescription}</p>
               )}
             </div>
           </div>
