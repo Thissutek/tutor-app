@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const ProcessRight = ({
   header,
   stepImage,
@@ -10,6 +12,12 @@ const ProcessRight = ({
   lineWidth = "25%",
   hoverDescription
 }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked((prev) => !prev)
+  }
+
   return (
     <div className="flex flex-col md:flex-row items-center justify-end px-4 md:px-8 mb-16">
       {/* Line Image with responsive positioning */}
@@ -26,7 +34,7 @@ const ProcessRight = ({
       </div>
 
       {/* Step Content */}
-      <div className="w-full md:w-2/3 text-center md:pl-8">
+      <div className="w-full md:w-2/3 text-center md:pl-8 hidden md:block">
         <h3 className="text-xl font-semibold header-style section-header mb-0">
           {header}
         </h3>
@@ -45,6 +53,30 @@ const ProcessRight = ({
           </div>
         </div>
       </div>
+
+
+
+      {/* Mobile Step Content */}
+      <div className="w-full md:w-2/3 text-center md:pl-8 block md:hidden">
+        <h3 className="text-xl font-semibold header-style section-header mb-0">
+          {header}
+        </h3>
+        <div className="relative group" onClick={handleClick}>
+          {/* Image with hover effect */}
+          <img
+            src={stepImage}
+            alt={stepAlt}
+            className={`max-w-[80%] md:max-w-[50%] h-auto mx-auto transition-opacity duration-300 ${isClicked ? "opacity-40" : "opacity-100"}`} />
+          {/* Overlay Text */}
+          <div className={`absolute inset-0 flex flex-col justify-center items-center text-center transition-opacity duration-300 p-4 z-20 ${isClicked ? "opacity-100 visible" : "opacity-0 invisible"
+            }`}>
+            {isClicked && (
+              <p className="text-style text-md w-1/2 h-full flex justify-center items-center p-4 font-bold lg:w-1/3">{hoverDescription}</p>
+            )}
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };
