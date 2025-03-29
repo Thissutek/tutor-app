@@ -19,7 +19,7 @@ export default function Reviews() {
   return (
     <div>
       {/* This is where the reviews widget will appear */}
-      <div className="elfsight-app-cc20f194-1979-4484-996d-45bd4147b020" data-elfsight-app-lazy></div>
+      <div className="elfsight-app-47a554e9-6976-47d6-b6df-7d773be19808" data-elfsight-app-lazy></div>
     </div>
   );
 }
