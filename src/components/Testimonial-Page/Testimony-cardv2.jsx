@@ -1,10 +1,9 @@
-// Responsive Testimonial Component that scales proportionally
 const TestimonialCard = ({ testimony_review, testimony_user }) => {
   return (
-    <div className="w-full max-w-md mx-auto overflow-hidden rounded bg-white text-slate-500 shadow-2xl shadow-slate-200">
+    <div className="w-full max-w-md min-h-[90vh] mx-auto overflow-hidden rounded bg-white text-slate-500 shadow-2xl shadow-slate-200">
       <div className="relative p-3 sm:p-4 md:p-6">
-        <figure className="relative z-10">
-          <blockquote className="p-2 sm:p-3 md:p-6 text-xs sm:text-sm md:text-lg leading-relaxed text-style">
+        <figure className="relative z-10 ">
+          <blockquote className="p-2 sm:p-3 md:p-6 text-xs sm:text-sm md:text-md leading-relaxed text-style">
             <p>
               {testimony_review}
             </p>

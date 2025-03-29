@@ -5,18 +5,18 @@ export default function Carousel() {
   const testimonials = [
     {
       id: 1,
-      review: "Best Tutors.",
-      user: "Sarah Johnson",
+      review: "I’ve been working with Amy since Grade 9, and she’s been a huge help in improving my math skills.  Before I started tutoring with her, I struggled a lot in math, but over the years, she’s made things much clearer.  Her teaching style is straightforward and patient.  She really takes the time to make sure I understand every concept we cover.  Now in grade 11, I’m more confident in my math skills and feel much better equipped to handle challenging topics. ",
+      user: "Eva S",
     },
     {
       id: 2,
-      review: "Awesome learning from all the tutors.",
-      user: "Devin Jamieson",
+      review: "I’ve been working with Amy for about 6 months, and she’s been amazing! Before I started, I found math really hard, but now I actually understand what we’re learning. She’s super patient and explains everything in a way that makes sense. I don’t feel stressed about math anymore, and I’m feeling way more confident in class.",
+      user: "Emma S",
     },
     {
       id: 3,
-      review: "I learned a lot about my ability to learn. Thank you to the team",
-      user: "Jamie Haroldson",
+      review: "Amy has been tutoring me in IB Math, Biology and Chemistry for the past three years and I would definitely recommend her! She is incredibly professional, kind, patient and is able to communicate complex topics with clarity. Further, Amy has a thorough understanding of the IB syllabus and exam format which I have found extremely helpful in my preparation for the IB exams.",
+      user: "Eva G",
     },
     {
       id: 4,
