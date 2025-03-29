@@ -72,7 +72,7 @@ export default function Carousel() {
         {/* Carousel */}
         <div className="relative">
           {/* Testimonial Cards */}
-          <div className="flex md:grid md:grid-cols-3 gap-4 p-4 overflow-x-auto md:overflow-hidden snap-x snap-mandatory md:snap-none justify-start md:justify-center items-center h-[40vh]">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 overflow-x-auto md:overflow-hidden snap-x snap-mandatory md:snap-none justify-start md:justify-center items-center h-[50vh] md:h-[70vh] mb-10">
             {visibleTestimonials().map((testimonial) => (
               <TestimonyCardV2
                 key={testimonial.id}
