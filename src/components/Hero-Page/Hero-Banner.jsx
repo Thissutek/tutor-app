@@ -3,9 +3,9 @@ import { Link } from "react-router"
 export default function HeroBanner() {
 
   return (
-    <section className="min-h-auto md:h-screen p-10 md:p-0 w-auto flex items-center justify-center bg-cover background-green bg-center relative">
+    <section className="min-h-auto md:h-[70vh] p-10 md:p-0 w-auto flex items-center justify-center bg-cover background-green bg-center relative">
       {/* Image Section */}
-      <img src="/imgs/hero-page-banner2.png" className="absolute hidden md:block inset-0 w-full h-full object-cover" alt="banner">
+      <img src="/imgs/hero-banner-3.png" className="absolute hidden md:block inset-0 w-full h-full object-cover" alt="banner">
       </img>
 
       <div className="container mx-auto px-8 relative z-10 flex items-center justify-start">

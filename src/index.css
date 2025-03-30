@@ -43,6 +43,10 @@
   background: #4b562c;
 }
 
+.background-none {
+  background: none;
+}
+
 .curve-mask {
   clip-path: circle(90.8% at 100% 0);
 }
@@ -87,4 +91,3 @@
     --font-small: 0.6875rem;
   }
 }
-
