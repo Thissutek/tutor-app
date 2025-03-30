@@ -18,18 +18,14 @@ export default function Carousel() {
       review: "Amy has been tutoring me in IB Math, Biology and Chemistry for the past three years and I would definitely recommend her! She is incredibly professional, kind, patient and is able to communicate complex topics with clarity. Further, Amy has a thorough understanding of the IB syllabus and exam format which I have found extremely helpful in my preparation for the IB exams.",
       user: "Eva G",
     },
+
     {
       id: 4,
-      review: "Helped me study for my exams.",
-      user: "Rachel Greene",
-    },
-    {
-      id: 5,
       review: "Amy is awesome.",
       user: "Matty Matheson",
     },
     {
-      id: 6,
+      id: 5,
       review: "I learn a lot.",
       user: "Bejoc Parfait",
     },
@@ -72,7 +68,7 @@ export default function Carousel() {
         {/* Carousel */}
         <div className="relative">
           {/* Testimonial Cards */}
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 overflow-x-auto md:overflow-hidden snap-x snap-mandatory md:snap-none justify-start md:justify-center items-center h-[50vh] md:h-[70vh] mb-10">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 overflow-hidden md:overflow-hidden snap-x snap-mandatory md:snap-none justify-start md:justify-center items-center h-[50vh] md:h-[70vh] mb-10">
             {visibleTestimonials().map((testimonial) => (
               <TestimonyCardV2
                 key={testimonial.id}
