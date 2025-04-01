@@ -20,6 +20,8 @@ export default function Reviews() {
     <div>
       {/* This is where the reviews widget will appear */}
       <div className="elfsight-app-47a554e9-6976-47d6-b6df-7d773be19808" data-elfsight-app-lazy></div>
+      {/*<iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25541114' frameBorder='0' width='100%' height='1000'></iframe> */}
+
     </div>
   );
 }

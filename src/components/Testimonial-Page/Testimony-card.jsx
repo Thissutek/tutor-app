@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import TestimonyCardV2 from "./Testimony-cardv2";
 
 export default function Carousel() {
@@ -21,8 +21,8 @@ export default function Carousel() {
 
     {
       id: 4,
-      review: "Amy is awesome.",
-      user: "Matty Matheson",
+      review: "Amy is an amazing chemistry tutor. She explains concepts clearly, is very patient, and always provides helpful practice questions that make a big difference when I’m preparing for exams. On top of that, she’s helped me in other subjects like math and biology. I wouldn’t have done as well in my classes without her help!",
+      user: "Zahra A",
     },
     {
       id: 5,
