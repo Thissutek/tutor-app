@@ -5,7 +5,7 @@ export default function AboutProfile() {
         <section className="flex flex-col lg:flex-row items-stretch">
           <div className="lg:w-1/3 w-full">
             <img
-              src="/imgs/about-profile.jpg"
+              src="/imgs/about-profile.png"
               alt="Profile"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
