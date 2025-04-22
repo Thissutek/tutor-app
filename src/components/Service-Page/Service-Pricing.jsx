@@ -5,10 +5,10 @@ const ServicePricing = () => {
     {
       title: "Private Tutoring",
       sections: [
-        { type: "ONLINE", price: "$700", description: "Prepaid 10-Hour Package" },
-        { type: "", price: "$75/hr", description: "Pay As You Go" },
-        { type: "IN-PERSON", price: "$750", description: "Prepaid 10-Hour Package" },
+        { type: "ONLINE", price: "$750", description: "Prepaid 10-Hour Package" },
         { type: "", price: "$80/hr", description: "Pay As You Go" },
+        { type: "IN-PERSON", price: "$800", description: "Prepaid 10-Hour Package" },
+        { type: "", price: "$85/hr", description: "Pay As You Go" },
       ],
     },
     {
