@@ -21,13 +21,13 @@ export default function Carousel() {
 
     {
       id: 4,
-      review: "Amy is an amazing chemistry tutor. She explains concepts clearly, is very patient, and always provides helpful practice questions that make a big difference when I’m preparing for exams. On top of that, she’s helped me in other subjects like math and biology. I wouldn’t have done as well in my classes without her help!",
-      user: "Zahra A",
+      review: "Working with Amy has been a great experience. She has made a big difference in my learning especially because i struggle to understand math. While answering questions i never feel uncomfortable if I need time to think or can’t come up with a solution. After, she explains the solution until I understand. On days I am tired she is very understanding and gives me a brain break when needed. Overall working with Amy as my math tutor has given me noticeable improvements in my math results and I have been lucky to have her as a tutor",
+      user: "Nevaeha D",
     },
     {
       id: 5,
-      review: "I learn a lot.",
-      user: "Bejoc Parfait",
+      review: "Amy is a great tutor. She’s very calm and patient with me even when I take a while to get the answers right. I’ve tried multiple tutors and none of them are as professional as Amy. She has helped me go from a 74% all the way to a 92% in mathematics",
+      user: "Christian S",
     },
 
   ];

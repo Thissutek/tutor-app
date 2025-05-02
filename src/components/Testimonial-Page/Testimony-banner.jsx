@@ -1,21 +1,26 @@
 export default function TestimonyBanner() {
   return (
-    <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-[80vh]">
-      {/* Banner Image */}
-      <img
-        src="/imgs/testimonial-banner.jpg"
-        alt="Services Banner"
-        className="w-full h-full object-cover"
-      />
+    <section className="min-h-auto md:h-[80vh] p-10 md:p-0 w-auto flex items-center justify-center bg-cover background-green bg-center relative">
+      {/* Image Section */}
+      <img src="/imgs/testimonial-banner.png" className="absolute hidden md:block inset-0 w-full h-full object-cover" alt="banner">
+      </img>
 
-      {/* Overlay with Text */}
-      <div className="absolute inset-0 flex items-end justify-center pb-6 md:pb-12">
-        <div className="bg-[rgba(0,0,0,0.60)] p-4 md:p-6 rounded-lg header-style-inverse max-w-[90%] md:max-w-[70%] lg:max-w-[50%]">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4 text-center text-white">
-            Testimonials & Reviews <br className="hidden sm:block" /> Hear What Our Students Have to Say
-          </h1>
+      <div className="container mx-auto px-8 relative z-10 flex items-center justify-start">
+        <div className="text-center w-full max-w-lg">
+          <h3 className="header-style-inverse text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+            Hear What Our Students<br />
+            Have to Say
+          </h3>
+          <p className="text-style-inverse mt-10 text-base sm:text-lg">
+            The Aims2Learn experience is more than just tutoring—it’s mentorship, confidence-building, and support that lasts beyond the classroom.
+          </p>
+
+
+          <p className="text-style-inverse mt-2 text-base sm:text-lg">
+            But don’t just take our word for it—hear from the students themselves.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
